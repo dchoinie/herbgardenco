@@ -57,7 +57,7 @@ const Header = (): JSX.Element => {
         <GatsbyImage
           image={data.logo.childImageSharp.gatsbyImageData}
           alt="Logo"
-          className="w-24"
+          className="w-20"
         />
         <div className="flex items-center">
           {navItems.map((item: NavItem) => (

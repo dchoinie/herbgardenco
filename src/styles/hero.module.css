@@ -1,0 +1,11 @@
+.hero {
+    height: calc(100vh - (137.49px + 40px))
+}
+
+.bgImg {
+    background-image: url("../assets/images/IMG_0831.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - (137.49px + 40px))
+}
