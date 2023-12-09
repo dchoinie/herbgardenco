@@ -30,22 +30,22 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "videos",
-        path: "./src/assets/videos/",
-      },
-      __key: "videos",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "documents",
-        path: "./src/assets/documents/",
-      },
-      __key: "documents",
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "videos",
+    //     path: "./src/assets/videos/",
+    //   },
+    //   __key: "videos",
+    // },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "documents",
+    //     path: "./src/assets/documents/",
+    //   },
+    //   __key: "documents",
+    // },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
