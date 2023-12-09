@@ -17,10 +17,10 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     // {
-    //   resolve: 'gatsby-source-wordpress',
+    //   resolve: "gatsby-source-wordpress",
     //   options: {
-    //     "url": ""
-    //   }
+    //     url: "https://herbgardencodb.com/graphql",
+    //   },
     // },
     {
       resolve: "gatsby-source-filesystem",
