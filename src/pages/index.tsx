@@ -10,13 +10,13 @@ import ComingSoon from "../components/comingSoon";
 const Home: React.FC<PageProps> = () => {
   return (
     <>
-      {/* <ComingSoon /> */}
-      <AnnouncementBar />
-      <Layout>
-        <Hero />
-        <HomeProducts />
-        <Benefits />
-      </Layout>
+      {/* <AnnouncementBar /> */}
+      {/* <Layout> */}
+      <ComingSoon />
+      {/* {/* <Hero /> */}
+      {/* <HomeProducts /> */}
+      {/* <Benefits /> */}
+      {/* </Layout> */}
     </>
   );
 };
