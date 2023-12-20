@@ -61,7 +61,7 @@ const Header = (): JSX.Element => {
         />
         <div className="flex items-center">
           {navItems.map((item: NavItem) => (
-            <Link to={item.path} className="mr-10 last:mr-0">
+            <Link key={item.name} to={item.path} className="mr-10 last:mr-0">
               {item.display}
             </Link>
           ))}

@@ -1,4 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -46,6 +49,16 @@ const config: GatsbyConfig = {
     //   },
     //   __key: "documents",
     // },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GTAG_TRACKING_ID],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",

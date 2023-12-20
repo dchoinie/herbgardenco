@@ -20,7 +20,9 @@ const Footer = (): JSX.Element => {
               .filter((item: NavItem) => item.name !== "account")
               .filter((item: NavItem) => item.name !== "cart")
               .map((item: NavItem) => (
-                <Link to={item.path}>{item.display}</Link>
+                <Link key={item.name} to={item.path}>
+                  {item.display}
+                </Link>
               ))}
           </div>
           <div className="flex gap-6 mb-6">
