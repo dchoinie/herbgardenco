@@ -26,6 +26,19 @@ const config: GatsbyConfig = {
     //   },
     // },
     {
+      resolve: "@pasdo501/gatsby-source-woocommerce",
+      options: {
+        api: "herbgardencodb.com",
+        https: true,
+        api_keys: {
+          consumer_key: process.env.WP_CONSUMER_KEY,
+          consumer_secret: process.env.WP_SECRET_KEY,
+        },
+        // Array of strings with fields you'd like to create nodes for...
+        fields: ["products", "products/categories"],
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
